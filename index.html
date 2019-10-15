@@ -6,12 +6,12 @@
     <body>
 
         <div id="app">
-            <input type="text" name="nome" id="nome" class="name"/>
+            <input type="text" name="nome" />
             <button class="botao">Adicionar</button>
         </div>
 
         <script>
-                var inputElement = document.getElementsByClassName('name')[0];
+                var inputElement = document.querySelector('body div#app input');
 
                 console.log(inputElement);   
         </script>
