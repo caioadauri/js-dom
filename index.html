@@ -7,14 +7,17 @@
 
         <div id="app">
             <input type="text" name="nome" />
-            <input type="text" name="nome2" />
             <button class="botao">Adicionar</button>
         </div>
 
         <script>
-                var inputElement = document.querySelectorAll('input');
+                var inputElement = document.querySelector('input[name=nome')
+                var bntElement = document.querySelector('button.botao');
 
-                console.log(inputElement);   
+                bntElement.onclick = function() {
+                    var text = inputElement.value
+                    alert(text);
+                } 
         </script>
     </body>
 </html>
